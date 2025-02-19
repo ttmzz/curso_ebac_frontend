@@ -13,14 +13,20 @@ form.addEventListener('submit', function(e) {
   const successMsg = "Positivo";
   const errorMsg = "Negativo";
 
+  const success = document.querySelector('.success-msg');
+  const error = document.querySelector('.error-msg');
+
   if(A < B) {
-   const success = document.querySelector('.success-msg');
+   
    success.innerHTML = successMsg;
    success.style.display = 'block';
+   error.style.display = 'none';
+   
   } else {
-    const error = document.querySelector('.error-msg');
+
     error.innerHTML = errorMsg;
     error.style.display = 'block';
+    success.style.display = 'none';
   }
 
 });
