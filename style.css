@@ -2,85 +2,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-    text-decoration: none;
 }
 
-header {
-    background-color: #5f27cd;
-    color: #fff;
-    padding: 16px 0;
+body {
+    background: #e7eef3 url('noise.png');
+    color: rgb(26, 26, 26);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
     display: flex;
-    text-transform: uppercase;
+    flex-direction: column;
     justify-content: center;
-    border-bottom: 16px solid #341f97;
-    font-style: italic;
+    align-items: center;
+    width: 100%;
+    max-height: 1280px;
+    height: 100vh; 
+    padding: 16px;
 }
 
-header button {
-    margin-left: 16px;
-}
-
-form {
-    background-color: #c8d6e5;
-    padding: 25px 0;
+.container {
     text-align: center;
-    display: none;
-}
-
-form h2 {
-  margin-bottom: 16px;
-}
-
-input, button {
+    height: 400px;
     padding: 8px;
 }
 
-button {
-    background-color: #009432;
-    color: #fff;
-    border: none;
-    font-weight: bold;
-    text-transform: uppercase;
+h1 {
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: -2px -2px 2px rgba(255, 255, 255, 0.6), /* Realce claro superior esquerdo */
+    2px 2px 3px rgba(0, 0, 0, 0.7); /* Sombra escura inferior direita */
+}
+
+#formulario {
+   padding-bottom: 12%;
+}
+
+input, button {
+  height: 10%;
+}
+
+input {
+    width: 10rem; 
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+.btn {
+    background: #34d958;
+    border-radius: 28px;
+    box-shadow: 2px 1px 3px #666666;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 0;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #49ed6d;
+    color: #fff4f4;
+    box-shadow: none;
+  }
+
+li {
+    width: 75%;
+    margin-left: 30%;
+    margin-bottom: 7px;
+    padding-right: 35%;
     cursor: pointer;
 }
 
-#cancelar-button {
-    background-color: red;
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-ul li {
-    max-width: 25%;
-    position: relative;
-    max-height: 200px;
-    overflow-y: hidden;
-}
-
-ul li img {
-    width: 100%;
-}
-
-.overlay-imagem-link {
-    padding: 16px;
-    background-color: rgba(0 ,0 ,0 , 0.7);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transition: all ease .5s;
-}
-
-.overlay-imagem-link a {
-    color: #fff;
-}
-
-ul li:hover .overlay-imagem-link {
-  opacity: 1;   
+.line-through {
+    text-decoration: line-through;
 }
