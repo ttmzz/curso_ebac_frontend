@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#formulario').on('submit', function(e) {
        e.preventDefault();
        const valorInput = $('#tarefa').val(); // Obtem o valor do input
-       const tarefas = $('<li class="line-through" style="text-decoration: none"></li>').text(valorInput); // Cria um novo item da lista
+       const tarefas = $('<li class="line-through"></li>').text(valorInput); // Cria um novo item da lista
 
        Lista.append(tarefas); // Adiciona o item a Lista
        $('#tarefa').val(''); // Remove o valor do input após o evento
