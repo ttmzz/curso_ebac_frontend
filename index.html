@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Lista de Tarefas</title>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #e7eef3 url('noise.png');
+            padding-left: 80px;
+            padding-top: 40px;
+        }
+
+        .espac {
+            padding-bottom: 8px;
+        }
+
+        .btn {
+           margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Lista de tarefas</h1>
-        <form id="formulario">
-            <input type="text" id="tarefa" name="nome" required placeholder="Nome da tarefa">
-            <button class="btn" type="submit">Cadastrar</button>
-        </form>
-    </div>
+    <main>
+        <p class="h1"><i>Formulário</i></p>
+        <form>
+            <div class="espac col-md-4">
+               <label class="form-label h5 text-info">Nome</label>
+               <input class="form-control form-control-sm" type="text" name="nome"> 
+            </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./index.js"></script>
+            <div class="espac col-md-4">
+              <label class="form-label h5 text-info">E-mail</label>
+              <input class="form-control form-control-sm" type="email" name="email">  
+            </div>
+            
+            <div class="espac col-md-4">
+               <label class="form-label h5 text-info">Telefone</label>
+               <input class="form-control form-control-sm" type="tel" name="telefone">
+            </div>
+            
+            <button class="btn btn-outline-success">Enviar</button>
+        </form>
+    </main>
 </body>
 </html>
