@@ -32,10 +32,6 @@ section {
         @include variaveis.produto;
     }
 
-.product-button {
-    @include variaveis.colorButton;
-}
-
-
+@include variaveis.colorButton;
 @include variaveis.Tablet;
 @include variaveis.Mobile;
