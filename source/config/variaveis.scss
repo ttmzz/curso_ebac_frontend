@@ -46,15 +46,16 @@ $corDoBotao: #44bd32;
 }
 
 @mixin colorButton() {
-    display: block;
-    background-color: $corDoBotao;
-    color: #fff;
-    text-align: center;
-    padding: 8px 0;
-    border-radius: 8px;
-    margin-top: 8px;
-    text-decoration: none;
-
+    .product-button {
+        display: block;
+        background-color: $corDoBotao;
+        color: #fff;
+        text-align: center;
+        padding: 8px 0;
+        border-radius: 8px;
+        margin-top: 8px;
+        text-decoration: none;
+    }
     .product-button:hover {
       background-color: #4cd137;
     }
