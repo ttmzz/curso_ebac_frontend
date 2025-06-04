@@ -70,7 +70,7 @@ section {
   margin-top: 8px;
   text-decoration: none;
 }
-.product-button .product-button:hover {
+.product-button:hover {
   background-color: #4cd137;
 }
 
