@@ -1,0 +1,16 @@
+$corDeFundo: rgb(125, 171, 33);
+$corDoTexto: rgb(207, 255, 239);
+
+body {
+    background-color: $corDeFundo;
+}
+
+
+div {
+    height: 50vh;
+    justify-items: center;
+    border-style: ridge;
+    h1 {
+     color: $corDoTexto;
+   }
+}
