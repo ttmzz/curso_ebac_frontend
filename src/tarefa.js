@@ -1,36 +1,17 @@
-class aluno {
+const alunos = [  // alunos é um array...
+    { nome: 'Pedro', nota: 7 },
+    { nome: 'Ana', nota: 9 },
+    { nome: 'Maria', nota: 6.5 },
+    { nome: 'Carlos', nota: 5 },
+    { nome: 'Luiza', nota: 8 }
+];
 
-    constructor(nomeAluno, notaAluno) {
-        this.nome = nomeAluno;
-        this.nota = notaAluno;
-    }
+const aprovados = alunos.filter(aluno => aluno.nota >= 6); // filtrar os alunos do array com nota igual ou superior a 6...
 
-   resultadoFinal() {
-    if (this.nota >= 6) {
-        console.log(`${this.nome} passou com a média de ${this.nota}`);
-    }
-}
-}
+const resultadoFinal = aprovados.map(aluno => 
+    `${aluno.nome} passou com a média de ${aluno.nota}`
+);
 
+console.log('--- APROVADOS ---');
 
-const Pedro = new aluno('Pedro', 7);
-const Ana = new aluno('Ana', 9);
-const Maria = new aluno('Maria', 6.5);
-const Carlos = new aluno('Carlos', 5);
-const Luiza =  new aluno('Luiza', 8);
-
-
-console.log('--- RESULTADO DE TODOS OS ALUNOS ---');
-console.log(Pedro);
-console.log(Ana);
-console.log(Maria);
-console.log(Carlos);
-console.log(Luiza);
-
-
-console.log('--- RESULTADO APENAS DOS APROVADOS ---');
-Pedro.resultadoFinal();
-Ana.resultadoFinal();
-Maria.resultadoFinal();
-Carlos.resultadoFinal();
-Luiza.resultadoFinal();
+resultadoFinal.forEach(msg => console.log(msg)); // Para cada item do array resultadoFinal, chama esse item de msg e mostra ele no console...
