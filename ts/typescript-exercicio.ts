@@ -1,35 +1,10 @@
-class Calcular {
-    valor1: number;
-    valor2: number;
-
-
-    constructor(valor1: number, valor2:number) {
-        this.valor1 = valor1 * 2;
-        this.valor2 = valor2 * 2;
-
-    }
-
-    multiplicador() {
-        return [this.valor1, this.valor2];
-    }
+function multiplicar(a: number, b: number): number {
+  return a * b;
 }
 
-const mult = new Calcular(5, 3);
-console.log(mult.multiplicador());
-
-console.log("------------------------------------");
-
-class Nome {
-    name: string;
-
-    constructor(name: string) {
-        this.name = name;
-    }
-
-    saldacao() {
-        return 'Olá ' + `${this.name}`;
-    }
+function saudacao(nome: string): string {
+  return `Olá ${nome}`;
 }
 
-const resp = new Nome('Pedro');
-console.log(resp.saldacao());
+console.log(multiplicar(5, 3)); // 15
+console.log(saudacao("Pedro")); // Olá Pedro
