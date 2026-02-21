@@ -1,1 +1,1 @@
-O exercício se encontra na pasta ts
+O exercício se encontra na pasta ts do arquivo typescript-exercicio.ts
